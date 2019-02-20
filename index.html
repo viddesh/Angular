@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app>
+
+<head>
+  <script data-require="angular.js@1.2.9" data-semver="1.2.9" src="http://code.angularjs.org/1.2.9/angular.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body ng-controller="ExampleCtrl">
+  <h1>Person List</h1>
+
+  <fieldset>
+    <legend>Create Person</legend>
+    <input type="text" ng-model="name" placeholder="Name">
+    <br />
+    <input type="number" ng-model="age" placeholder="Age">
+    <br />
+    <input type="text" ng-model="title" placeholder="Title">
+    <br />
+    <button type="button" ng-click="addPerson()">Add Person</button>
+  </fieldset>
+
+  <table border="1" cellpadding="10">
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Age
+        </th>
+        <th>
+          Title
+        </th>
+        <th>
+
+        </th>
+        <th>
+
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="person in people">
+        <td>
+          {{ person.name }}
+        </td>
+        <td>
+          {{ person.age }}
+        </td>
+        <td>
+          {{ person.title }}
+        </td>
+        <td>
+          <button type="button" ng-click="removePerson($index)">Remove Person</button>
+        </td>
+        <td>
+          <button type="button" ng-click="editPerson($index)">Edit Person</button>
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+<script>
+	var y = 5;
+	var value = 0; 
+	for(i=y;i<0;i--){
+		value += value + temp; 
+		temp = y*y-1;
+		console.log(value)
+	}
+</script>
+</body>
+
+</html>

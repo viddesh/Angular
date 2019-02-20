@@ -1,0 +1,31 @@
+#clockDiv {
+    font-family: courier, monospace;
+    text-align: center;
+    color: black;
+    font-size: 22px;
+    border:black 1px solid;
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+body{
+        background-image:url(logo.png);
+}
+.text-area-section{
+    margin-top: 10px;
+}
+.custom-canvas{
+    border-radius: 80px;
+    background-color:#000000;
+}
+.red {
+    
+
+}
+
+.green {
+    border:1px solid black;
+    width:120px;
+    height:120px;
+    display:none;
+}
