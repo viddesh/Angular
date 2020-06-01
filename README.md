@@ -1,2 +1,2 @@
 # angular
-Project is all about how to add and delete the person from person list using angular
+this is another a basic project which i made as a angular practice.
